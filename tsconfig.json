@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "useUnknownInCatchVariables": false,
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "lib": [
+      //
+      "ESNext.Array",
+      "DOM",
+      "DOM.AsyncIterable",
+      "DOM.Iterable",
+      "ESNext",
+      "ESNext.Disposable",
+      "ESNext.AsyncIterable"
+    ]
+  }
+}

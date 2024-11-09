@@ -1,0 +1,41 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "nursery": {
+        "noEnum": "error"
+      },
+      "style": {
+        "noParameterProperties": "error",
+        "useNamingConvention": "off",
+        "noUnusedTemplateLiteral": "off"
+      }
+    }
+  },
+  "formatter": {
+    "useEditorconfig": true,
+    "indentWidth": 2,
+    "indentStyle": "space",
+    "lineWidth": 120
+  },
+  "javascript": {
+    "formatter": {
+      "semicolons": "asNeeded"
+    }
+  },
+  "json": {
+    "parser": {
+      "allowTrailingCommas": true,
+      "allowComments": true
+    }
+  },
+  "files": {
+    "ignore": ["./cloudflare-workers/**", "./node_modules/**", "./dist/**", "coverage/", "src/generated-types/"],
+    "ignoreUnknown": true
+  }
+}
